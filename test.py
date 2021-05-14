@@ -1,2 +1,4 @@
-a = "123"
-print(len(a))
+a = 'A'
+b = 'b'
+c = a+b
+print(c)
