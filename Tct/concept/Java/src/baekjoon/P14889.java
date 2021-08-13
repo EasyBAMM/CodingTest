@@ -30,7 +30,7 @@ public class P14889 {
 				map[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
-		int[] count = { 0, 0, 0 };
+
 		combi(0, 0);
 		System.out.println(Min);
 	}
