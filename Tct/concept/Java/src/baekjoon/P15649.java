@@ -18,11 +18,11 @@ public class P15649 {
 		visited = new boolean[n]; // initial false
 		out = new int[m];
 
-		btk(0, n, m);
+		btk(0);
 		System.out.println(sb);
 	}
 
-	public static void btk(int depth, int n, int m) {
+	public static void btk(int depth) {
 		if (depth == m) {
 			for (int val : out) {
 				sb.append(val).append(' ');
@@ -35,7 +35,7 @@ public class P15649 {
 			if (!visited[i]) {
 				visited[i] = true;
 				out[depth] = i + 1;
-				btk(depth + 1, n, m);
+				btk(depth + 1);
 				visited[i] = false;
 			}
 		}

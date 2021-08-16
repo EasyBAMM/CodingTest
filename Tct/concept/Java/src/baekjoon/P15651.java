@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class P15650 {
+public class P15651 {
+
 	public static int n, m;
 	public static StringBuilder sb = new StringBuilder();
 	public static int[] out;
@@ -14,15 +15,13 @@ public class P15650 {
 		String[] line = bf.readLine().split(" ");
 		n = Integer.parseInt(line[0]);
 		m = Integer.parseInt(line[1]);
-
 		out = new int[m];
 
-		btk(1, 0);
-
+		btk(0);
 		System.out.println(sb);
 	}
 
-	public static void btk(int at, int depth) {
+	public static void btk(int depth) {
 		if (depth == m) {
 			for (int val : out) {
 				sb.append(val).append(' ');
@@ -31,10 +30,9 @@ public class P15650 {
 			return;
 		}
 
-		for (int i = at; i <= n; i++) {
-			out[depth] = i;
-			btk(i + 1, depth + 1);
+		for (int i = 0; i < n; i++) {
+			out[depth] = i + 1;
+			btk(depth + 1);
 		}
 	}
-
 }

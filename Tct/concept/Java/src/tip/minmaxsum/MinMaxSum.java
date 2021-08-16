@@ -1,4 +1,4 @@
-package tip;
+package tip.minmaxsum;
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
