@@ -14,6 +14,7 @@ public class P15650 {
 		String[] line = bf.readLine().split(" ");
 		n = Integer.parseInt(line[0]);
 		m = Integer.parseInt(line[1]);
+
 		out = new int[m];
 
 		btk(1, 0);
