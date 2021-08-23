@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.HashMap;
 
-public class Level1완주하지못한선수 {
+public class L1완주하지못한선수 {
 	public String solution(String[] participant, String[] completion) {
 		String answer = "";
 
